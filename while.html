@@ -1,0 +1,27 @@
+<DOCTYPE html>
+	<html>
+	<head>
+		<title> do while loop</title>
+	</head>
+	<body>
+		<input type="text" id="table">
+		<button onclick="printTable()">print</button>
+		<script>
+			function printTable(){
+				var num=parseInt(document.getElementById('table').value);
+
+				var i=1;
+				do
+				{
+					console.log(num*i);
+					i=i+1;
+
+				}
+				while(i<=10);
+			}
+
+	</script>
+</body>
+</html>
+
+
