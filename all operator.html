@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Calculator with using all operators </title>
+</head>
+	<body>
+<input type="text" id="x1"><br><br>
+<input type="text" id="x2"><br><br>
+
+
+<select id="operators">
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="/">/</option>
+<option value="*">*</option>
+<option value="%">%</option>
+<option value="!=">!=</option>
+<option value="==">==</option>
+<option value="===">===</option>
+<option value="!==">!==</option><option value=">">></option>
+<option value="<"><</option><option value=">=">>=</option><option value="<="><=</option>
+<option value="**">**</option></select>
+	<input type="text" id="result"><br><br>
+<button onclick="abc();"></button>result<br><br>
+
+<script>
+function abc() {
+	var x1 = parseFloat(document.getElementById('x1').value);
+	var x2 =parseFloat(document.getElementById('x2').value);
+	var operat = document.getElementById('operators').value;
+	if(operat=='+'){
+		document.getElementById('result').value=x1+x2;
+	}
+	if(operat=='-'){
+		document.getElementById('result').value=x1-x2;
+	}
+	if(operat=='/'){
+		document.getElementById('result').value=x1/x2;
+	}
+	if(operat=='*'){
+		document.getElementById('result').value=x1*x2;
+	}
+	if(operat=='%'){
+		document.getElementById('result').value=x1%x2;
+	}
+	if(operat=='!='){
+		document.getElementById('result').value=x1!=x2;
+	}
+	if(operat=='=='){
+		document.getElementById('result').value=x1==x2;
+	}
+	if(operat=='==='){
+		document.getElementById('result').value=x1===x2;
+	}
+	if(operat=='!=='){
+		document.getElementById('result').value=x1!==x2;
+	}
+	if(operat=='>'){
+		document.getElementById('result').value=x1>x2;
+	}
+	if(operat=='<'){
+		document.getElementById('result').value=x1<x2;
+		}
+	if(operat=='>='){
+		document.getElementById('result').value=x1>=x2;
+	}
+	if(operat=='<='){
+		document.getElementById('result').value=x1>=x2;
+	}
+	if(operat=='**'){
+		document.getElementById('result').value=x1**x2;
+	}
+	
+	
+	
+	
+}
+</script>
+
+</body>
+</html>
